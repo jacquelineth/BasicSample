@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/CustomerSchema" xmlns:tns="http://www.example.org/CustomerSchema" elementFormDefault="qualified">
+
+    <complexType name="Customer">
+    	<attribute name="MoneySpent" type="int"></attribute>
+    	<attribute name="category" type="tns:Category"></attribute>
+    	<attribute name="rebate" type="int" default="0"></attribute>
+    </complexType>
+
+    <simpleType name="Category">
+    	<restriction base="string">
+    		<enumeration value="Gold"></enumeration>
+    		<enumeration value="Silver"></enumeration>
+    		<enumeration value="Bronze"></enumeration>
+    		<enumeration value="None"></enumeration>
+    	</restriction>
+    </simpleType>
+</schema>

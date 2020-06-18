@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>ParametetMap</name>
+  <uuid>0203b56d-4d74-480d-987b-88290e2808b7</uuid>
+  <variables name="Prospect" type="org.example.customerschema.Customer" initialValue="new org.example.customerschema.Customer()" verbalization="theProspect"/>
+  <variables name="response" type="java.lang.String" initialValue="" verbalization="theTextOutput"/>
+</ilog.rules.studio.model.base:VariableSet>

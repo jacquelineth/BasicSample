@@ -1,0 +1,12 @@
+# Vocabulary Properties
+uuid = 0eb70a22-73c0-4c28-b618-a3dae7dd8927
+
+# org.example.customerschema.Customer
+org.example.customerschema.Customer#concept.label = customer
+org.example.customerschema.Customer.MoneySpent#phrase.action = set the money spent of {this} to {money spent}
+org.example.customerschema.Customer.MoneySpent#phrase.navigation = {money spent} of {this}
+org.example.customerschema.Customer.category#phrase.action = set the category of {this} to {category}
+org.example.customerschema.Customer.category#phrase.navigation = {category} of {this}
+org.example.customerschema.Customer.rebate#phrase.action = set the rebate of {this} to {rebate}
+org.example.customerschema.Customer.rebate#phrase.navigation = {rebate} of {this}
+org.example.customerschema.Customer.setUnknownRebate()#phrase.action = setUnknownRebate {this}
