@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ilog.rules.studio.model.base:RuleProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore" xmlns:ilog.rules.studio.model.bom="http://ilog.rules.studio/model/bom.ecore" xmlns:ilog.rules.studio.model.query="http://ilog.rules.studio/model/query.ecore" xmlns:ilog.rules.studio.model.rule="http://ilog.rules.studio/model/rule.ecore" xmlns:ilog.rules.studio.model.xom="http://ilog.rules.studio/model/xom.ecore" buildMode="DecisionEngine" isADecisionService="true" migrationFlag="3">
-  <name>BasicSample</name>
-  <uuid>fcc8628b-f2b3-4049-b83d-02b889d6f612</uuid>
+  <name>BasicSample_feature_XOM</name>
+  <uuid>160f6c75-20df-4c48-b7ee-7644645d4432</uuid>
   <outputLocation>output</outputLocation>
   <categories>any</categories>
   <paths xsi:type="ilog.rules.studio.model.xom:XOMPath" pathID="XOM">
-    <entries xsi:type="ilog.rules.studio.model.xom:DynamicXOMPathEntry" name="CustomerSchema.xsd" url="platform:/BasicSample/resources/CustomerSchema.xsd" kind="XSD" rootPackage="org.example.customerschema" namespace="http://www.example.org/CustomerSchema"/>
-    <entries xsi:type="ilog.rules.studio.model.xom:LibraryXOMPathEntry" name="org.eclipse.jdt.launching.JRE_CONTAINER" url="file:org.eclipse.jdt.launching.JRE_CONTAINER" kind="LIBRARY"/>
+    <entries xsi:type="ilog.rules.studio.model.xom:LibraryXOMPathEntry" name="org.eclipse.jdt.launching.JRE_CONTAINER" url="file:org.eclipse.jdt.launching.JRE_CONTAINER" kind="LIBRARY" exported="false"/>
+    <entries xsi:type="ilog.rules.studio.model.xom:SystemXOMPathEntry" name="XOM" url="platform:/XOM" kind="JAVA_PROJECT" exported="true"/>
   </paths>
-  <paths xsi:type="ilog.rules.studio.model.bom:BOMPath" pathID="BOM">
-    <entries xsi:type="ilog.rules.studio.model.bom:BOMEntry" name="model" url="platform:/BasicSample/bom/model.bom" origin="xom:/BasicSample//BasicSample/resources/CustomerSchema.xsd"/>
+  <paths xsi:type="ilog.rules.studio.model.bom:BOMPath" pathID="BOM" pathEntriesModified="true">
+    <entries xsi:type="ilog.rules.studio.model.bom:BOMEntry" name="XOMmodel" url="platform:/BasicSample_feature_XOM/bom/XOMmodel.bom" origin="xom:/BasicSample_feature_XOM//XOM"/>
   </paths>
   <modelFolders xsi:type="ilog.rules.studio.model.base:SourceFolder">
     <name>rules</name>
@@ -29,5 +29,4 @@
   <modelFolders xsi:type="com.ibm.rules.studio.model.decisionservice:OperationFolder">
     <name>deployment</name>
   </modelFolders>
-  <schemaDependencies location="./resources/CustomerSchema.xsd" namespace="http://www.example.org/CustomerSchema"/>
 </ilog.rules.studio.model.base:RuleProject>

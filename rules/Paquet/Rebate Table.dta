@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ilog.rules.studio.model.dt:DecisionTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.dt="http://ilog.rules.studio/model/dt.ecore">
   <name>Rebate Table</name>
-  <uuid>93d956cd-fe90-480b-99d2-a761a7802a42</uuid>
+  <uuid>8d5526c2-5f40-4f16-857f-27f9b65de126</uuid>
   <locale>en_US</locale>
   <definition>
 <DT xmlns="http://schemas.ilog.com/Rules/7.0/DecisionTable" Version="7.0">
@@ -10,7 +10,7 @@
       <ConditionDefinitions>
         <ConditionDefinition Id="C0">
           <ExpressionDefinition>
-            <Text><![CDATA[the category of theProspect is <a string>]]></Text>
+            <Text><![CDATA[the category of theProspect is <a category>]]></Text>
           </ExpressionDefinition>
         </ConditionDefinition>
         <ConditionDefinition Id="C1">
@@ -27,7 +27,7 @@
         </ActionDefinition>
         <ActionDefinition Id="A1">
           <ExpressionDefinition>
-            <Text><![CDATA[set the category of theProspect  to <a string>]]></Text>
+            <Text><![CDATA[set the category of theProspect to <a category>]]></Text>
           </ExpressionDefinition>
         </ActionDefinition>
       </ActionDefinitions>
@@ -36,7 +36,7 @@
       <Partition DefId="C0">
         <Condition>
           <Expression>
-            <Param><![CDATA["Silver"]]></Param>
+            <Param><![CDATA[Silver]]></Param>
           </Expression>
           <Partition DefId="C1">
             <Condition>
@@ -52,7 +52,7 @@
                 </Action>
                 <Action DefId="A1">
                   <Expression>
-                    <Param><![CDATA["Gold"]]></Param>
+                    <Param><![CDATA[Gold]]></Param>
                   </Expression>
                 </Action>
               </ActionSet>
@@ -61,7 +61,7 @@
         </Condition>
         <Condition>
           <Expression>
-            <Param><![CDATA["Bronze"]]></Param>
+            <Param><![CDATA[Bronze]]></Param>
           </Expression>
           <Partition DefId="C1">
             <Condition>
@@ -77,7 +77,7 @@
                 </Action>
                 <Action DefId="A1">
                   <Expression>
-                    <Param><![CDATA["Silver"]]></Param>
+                    <Param><![CDATA[Silver]]></Param>
                   </Expression>
                 </Action>
               </ActionSet>
@@ -86,7 +86,7 @@
         </Condition>
         <Condition>
           <Expression>
-            <Param><![CDATA["Gold"]]></Param>
+            <Param><![CDATA[Gold]]></Param>
           </Expression>
           <Partition DefId="C1">
             <Condition>
@@ -102,7 +102,7 @@
                 </Action>
                 <Action DefId="A1">
                   <Expression>
-                    <Param><![CDATA["Silver"]]></Param>
+                    <Param><![CDATA[Silver]]></Param>
                   </Expression>
                 </Action>
               </ActionSet>
@@ -111,7 +111,7 @@
         </Condition>
         <Condition>
           <Expression>
-            <Param><![CDATA["None"]]></Param>
+            <Param><![CDATA[None]]></Param>
           </Expression>
           <Partition DefId="C1">
             <Condition>
@@ -127,7 +127,7 @@
                 </Action>
                 <Action DefId="A1">
                   <Expression>
-                    <Param><![CDATA["Bronze"]]></Param>
+                    <Param><![CDATA[Bronze]]></Param>
                   </Expression>
                 </Action>
               </ActionSet>
@@ -140,13 +140,13 @@
   <Resources DefaultLocale="en_US">
     <ResourceSet Locale="en_US">
       <Data Name="Definitions(A0)#HeaderText"><![CDATA[Output]]></Data>
-      <Data Name="Definitions(A0)#Width"><![CDATA[297]]></Data>
+      <Data Name="Definitions(A0)#Width"><![CDATA[391]]></Data>
       <Data Name="Definitions(A1)#HeaderText"><![CDATA[Promote to]]></Data>
-      <Data Name="Definitions(A1)#Width"><![CDATA[125]]></Data>
+      <Data Name="Definitions(A1)#Width"><![CDATA[219]]></Data>
       <Data Name="Definitions(C0)#HeaderText"><![CDATA[Category]]></Data>
-      <Data Name="Definitions(C0)#Width"><![CDATA[126]]></Data>
+      <Data Name="Definitions(C0)#Width"><![CDATA[220]]></Data>
       <Data Name="Definitions(C1)#HeaderText"><![CDATA[Cumulated Purchase]]></Data>
-      <Data Name="Definitions(C1)#Width"><![CDATA[460]]></Data>
+      <Data Name="Definitions(C1)#Width"><![CDATA[554]]></Data>
     </ResourceSet>
   </Resources>
 </DT></definition>

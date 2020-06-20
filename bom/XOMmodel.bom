@@ -1,0 +1,29 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/BasicSample_feature_XOM//XOM"
+property uuid "1b006c54-f05f-4f4a-a277-6d531194d260"
+package com.ibm.odm.support;
+
+
+public final class Category
+        extends java.lang.Enum
+{
+    domain {static None, static Bronze, static Silver, static Gold}
+    public static final readonly com.ibm.odm.support.Category Bronze;
+    public static final readonly com.ibm.odm.support.Category Gold;
+    public static final readonly com.ibm.odm.support.Category None;
+    public static final readonly com.ibm.odm.support.Category Silver;
+    public static com.ibm.odm.support.Category valueOf(string arg);
+    public static com.ibm.odm.support.Category[] values();
+}
+
+public class Customer
+{
+    public com.ibm.odm.support.Category category;
+    public int moneySpent;
+    public readonly string name;
+    public int rebate;
+    public Customer(string arg);
+    public Customer();
+}
+

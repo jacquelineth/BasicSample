@@ -3,6 +3,7 @@
 	<name>BasicSample</name>
 	<comment></comment>
 	<projects>
+		<project>XOM</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

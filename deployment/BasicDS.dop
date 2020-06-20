@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="BasicDS" usingRuleflow="true" ruleflowName="MainFlow" targetRuleProjectName="BasicSample">
   <name>BasicDS</name>
-  <uuid>079e9867-be2e-46b2-b79e-b4e3ac3c704d</uuid>
+  <uuid>e7dc6d57-8da9-48b9-9c3f-804b27045b52</uuid>
   <referencedVariables variableName="Prospect" variableSetName="ParametetMap">
-    <variableSet href="../rules/ParametetMap.var#0203b56d-4d74-480d-987b-88290e2808b7"/>
+    <variableSet href="../rules/ParametetMap.var#f10262af-a95d-4013-b3f6-ad70a82f3c8f"/>
   </referencedVariables>
   <referencedVariables variableName="response" variableSetName="ParametetMap" direction="OUT">
-    <variableSet href="../rules/ParametetMap.var#0203b56d-4d74-480d-987b-88290e2808b7"/>
+    <variableSet href="../rules/ParametetMap.var#f10262af-a95d-4013-b3f6-ad70a82f3c8f"/>
   </referencedVariables>
-  <ruleflow href="../rules/MainFlow.rfl#aee81cb3-f06e-447d-95ed-aa6223113328"/>
+  <ruleflow href="../rules/MainFlow.rfl#d3b3d8c2-7a68-429c-be09-4c5bdd869095"/>
   <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="BasicDS_extractor" validator="Default Validator"/>
-  <targetRuleProject href="../../BasicSample#fcc8628b-f2b3-4049-b83d-02b889d6f612"/>
+  <targetRuleProject href="../../BasicSample#160f6c75-20df-4c48-b7ee-7644645d4432"/>
 </com.ibm.rules.studio.model.decisionservice:Operation>
