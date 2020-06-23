@@ -5,7 +5,7 @@
   <outputLocation>output</outputLocation>
   <categories>any</categories>
   <paths xsi:type="ilog.rules.studio.model.xom:XOMPath" pathID="XOM">
-    <entries xsi:type="ilog.rules.studio.model.xom:DynamicXOMPathEntry" name="CustomerSchema.xsd" url="platform:/BasicSample/resources/CustomerSchema.xsd" kind="XSD" rootPackage="org.example.customerschema" namespace="http://www.example.org/CustomerSchema"/>
+    <entries xsi:type="ilog.rules.studio.model.xom:DynamicXOMPathEntry" name="CustomerSchema.xsd" url="platform:/BasicSample/CustomerSchema.xsd" kind="XSD" rootPackage="org.example.customerschema" namespace="http://www.example.org/CustomerSchema"/>
     <entries xsi:type="ilog.rules.studio.model.xom:LibraryXOMPathEntry" name="org.eclipse.jdt.launching.JRE_CONTAINER" url="file:org.eclipse.jdt.launching.JRE_CONTAINER" kind="LIBRARY"/>
   </paths>
   <paths xsi:type="ilog.rules.studio.model.bom:BOMPath" pathID="BOM">
@@ -29,5 +29,5 @@
   <modelFolders xsi:type="com.ibm.rules.studio.model.decisionservice:OperationFolder">
     <name>deployment</name>
   </modelFolders>
-  <schemaDependencies location="./resources/CustomerSchema.xsd" namespace="http://www.example.org/CustomerSchema"/>
+  <schemaDependencies location="./CustomerSchema.xsd" namespace="http://www.example.org/CustomerSchema"/>
 </ilog.rules.studio.model.base:RuleProject>
