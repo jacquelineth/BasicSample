@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="LibertyWebLogic">
+  <eAnnotations source="ilog.rules.custom_properties">
+    <details key="Dep_SnapshotCreationKind" value="ALWAYS"/>
+    <details key="Dep_Groups" value="rtsAdministrator,rtsConfigManager"/>
+  </eAnnotations>
   <name>LibertyWebLogic</name>
   <uuid>112dfb60-aea9-4af9-ad57-bc9a9ebced2e</uuid>
   <targets label="Liberty RES"/>
-  <targets label="Liberty Decision Runner"/>
-  <targets label="WebLogic RES"/>
-  <targets label="WebLogic Decision Runner"/>
   <operations operationName="BasicDS">
     <operation href="BasicDS.dop#079e9867-be2e-46b2-b79e-b4e3ac3c704d"/>
+    <properties key="ruleset.debug.enabled">
+      <value><![CDATA[true]]></value>
+    </properties>
+    <properties key="ruleset.maxIdleTime">
+      <value><![CDATA[1]]></value>
+    </properties>
     <properties key="ruleset.version">
       <value><![CDATA[1.0]]></value>
     </properties>
-    <properties key="ruleset.debug.enabled">
+    <properties key="ruleset.status">
+      <value><![CDATA[enabled]]></value>
+    </properties>
+    <properties key="com.ibm.rules.engine.bytecode.generation">
       <value><![CDATA[true]]></value>
     </properties>
     <properties key="ruleset.trace.enabled">
@@ -22,9 +32,6 @@
     </properties>
     <properties key="monitoring.enabled">
       <value><![CDATA[true]]></value>
-    </properties>
-    <properties key="ruleset.maxIdleTime">
-      <value><![CDATA[1]]></value>
     </properties>
   </operations>
   <versionPolicies label="Increment minor version numbers" ruleset="INCREMENT_MINOR" default="true" recurrent="true">
