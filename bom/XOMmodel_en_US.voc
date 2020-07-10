@@ -1,0 +1,19 @@
+# Vocabulary Properties
+uuid = 00e930d2-1c2a-443a-8543-fd03f6c016ad
+
+# com.ibm.odm.support.Category
+com.ibm.odm.support.Category#concept.label = category
+com.ibm.odm.support.Category.Bronze#instance.label = Bronze
+com.ibm.odm.support.Category.Gold#instance.label = Gold
+com.ibm.odm.support.Category.None#instance.label = None
+com.ibm.odm.support.Category.Silver#instance.label = Silver
+
+# com.ibm.odm.support.Customer
+com.ibm.odm.support.Customer#concept.label = customer
+com.ibm.odm.support.Customer.category#phrase.action = set the category of {this} to {category}
+com.ibm.odm.support.Customer.category#phrase.navigation = {category} of {this}
+com.ibm.odm.support.Customer.moneySpent#phrase.action = set the money spent of {this} to {money spent}
+com.ibm.odm.support.Customer.moneySpent#phrase.navigation = {money spent} of {this}
+com.ibm.odm.support.Customer.name#phrase.navigation = {name} of {this}
+com.ibm.odm.support.Customer.rebate#phrase.action = set the rebate of {this} to {rebate}
+com.ibm.odm.support.Customer.rebate#phrase.navigation = {rebate} of {this}

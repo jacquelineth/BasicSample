@@ -1,16 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="LibertyWebLogic" managingXom="true">
+<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="LibertyWebLogic">
+  <eAnnotations source="ilog.rules.custom_properties">
+    <details key="Dep_SnapshotCreationKind" value="ALWAYS"/>
+    <details key="Dep_Groups" value="rtsAdministrator,rtsConfigManager"/>
+  </eAnnotations>
   <name>LibertyWebLogic</name>
+<<<<<<< HEAD
+  <uuid>7f8b0b86-e62b-4b47-a5b0-e01ca352a458</uuid>
+  <targets label="Liberty RES"/>
+  <targets label="Liberty DecisionRunner"/>
+  <operations operationName="BasicDS">
+    <operation href="BasicDS.dop#e7dc6d57-8da9-48b9-9c3f-804b27045b52"/>
+=======
   <uuid>112dfb60-aea9-4af9-ad57-bc9a9ebced2e</uuid>
-  <targets label="Liberty"/>
-  <targets label="Weblogic RES"/>
-  <targets label="WebLogic Decision Runner"/>
+  <targets label="Liberty RES"/>
   <operations operationName="BasicDS">
     <operation href="BasicDS.dop#079e9867-be2e-46b2-b79e-b4e3ac3c704d"/>
+    <properties key="ruleset.debug.enabled">
+      <value><![CDATA[true]]></value>
+    </properties>
+    <properties key="ruleset.maxIdleTime">
+      <value><![CDATA[1]]></value>
+    </properties>
+>>>>>>> bugfix/DecisionRunner
     <properties key="ruleset.version">
       <value><![CDATA[1.0]]></value>
     </properties>
-    <properties key="ruleset.debug.enabled">
+    <properties key="ruleset.status">
+      <value><![CDATA[enabled]]></value>
+    </properties>
+    <properties key="com.ibm.rules.engine.bytecode.generation">
       <value><![CDATA[true]]></value>
     </properties>
     <properties key="ruleset.trace.enabled">
@@ -21,9 +40,6 @@
     </properties>
     <properties key="monitoring.enabled">
       <value><![CDATA[true]]></value>
-    </properties>
-    <properties key="ruleset.maxIdleTime">
-      <value><![CDATA[1]]></value>
     </properties>
   </operations>
   <versionPolicies label="Increment minor version numbers" ruleset="INCREMENT_MINOR" default="true" recurrent="true">

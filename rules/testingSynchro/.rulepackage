@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
-  <name>Paquet</name>
-  <uuid>d3b20ba4-7792-4dd6-9ca4-76537044dcad</uuid>
+  <name>testingSynchro</name>
+  <uuid>adc4901a-463e-4b00-8294-f50288218302</uuid>
 </ilog.rules.studio.model.base:RulePackage>
